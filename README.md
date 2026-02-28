@@ -90,6 +90,16 @@
 
 ---
 
+### 8. Git 규칙 정의서
+
+| 문서 | 설명 |
+|------|------|
+| [팀 프로젝트 Git & GitHub 사용 규칙](Git%20규칙%20정의서/팀_프로젝트_Git_%26_GitHub_사용%20규칙.md) | main/dev 브랜치 전략, 워크플로우, Conventional Commits, PR 규칙 |
+
+**핵심:** `dev`가 개발 중심, `main`은 배포 전용. feature/bugfix/hotfix 브랜치 → PR → Squash merge
+
+---
+
 ## 🔗 문서 연관 관계
 
 ```
@@ -113,6 +123,7 @@ hms-doc/
 ├── 5_화면_흐름_시퀀스_다이어그램/  # v1, v2
 ├── 6_화면_기능_정의서/     # API 명세서 복본
 ├── 코드_리뷰_규칙/
+├── Git 규칙 정의서/        # Git & GitHub 사용 규칙
 ├── .markdownlint.json      # Markdown lint 설정
 └── README.md
 ```
