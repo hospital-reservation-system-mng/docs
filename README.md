@@ -94,9 +94,19 @@
 
 | 문서 | 설명 |
 |------|------|
-| [팀 프로젝트 Git & GitHub 사용 규칙](Git%20규칙%20정의서/팀_프로젝트_Git_%26_GitHub_사용%20규칙.md) | main/dev 브랜치 전략, 워크플로우, Conventional Commits, PR 규칙 |
+| [팀 프로젝트 Git & GitHub 사용 규칙](Git_규칙_정의서/팀_프로젝트_Git_%26_GitHub_사용%20규칙.md) | main/dev 브랜치 전략, 워크플로우, Conventional Commits, PR 규칙 |
 
 **핵심:** `dev`가 개발 중심, `main`은 배포 전용. feature/bugfix/hotfix 브랜치 → PR → Squash merge
+
+---
+
+### 9. 요구사항 정의서
+
+| 문서 | 설명 |
+|------|------|
+| [PBL 프로젝트 최소 요구사항 정의서](요구사항_정의서/PBL_프로젝트_최소_요구사항_정의서.md) | PBL 교육용 최소 필수 요구사항 (REST API, JPA, 인증·인가, Redis 세션, Mustache SSR 등) |
+
+**핵심:** Spring Boot 3.x, JPA 연관관계, Redis 세션, Mustache SSR, 글로벌 예외 핸들러, 페이징 필수
 
 ---
 
@@ -123,7 +133,8 @@ hms-doc/
 ├── 5_화면_흐름_시퀀스_다이어그램/  # v1, v2
 ├── 6_화면_기능_정의서/     # API 명세서 복본
 ├── 코드_리뷰_규칙/
-├── Git 규칙 정의서/        # Git & GitHub 사용 규칙
+├── Git_규칙_정의서/        # Git & GitHub 사용 규칙
+├── 요구사항_정의서/        # PBL 최소 요구사항
 ├── .markdownlint.json      # Markdown lint 설정
 └── README.md
 ```
