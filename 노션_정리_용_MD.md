@@ -59,13 +59,14 @@
 ### 4. API 명세서
 
 
-| 문서             | 버전       | 설명                       | 링크                                                                                                                                                                                                                                                               |
-| -------------- | -------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| API 명세서 v1     | v1.0     | REST 혼용 구조               | [GitHub](https://github.com/hospital-reservation-system-mng/docs/blob/master/4_API_명세서/%F0%9F%8F%A5_%EB%B3%91%EC%9B%90_%EC%98%88%EC%95%BD_%26_%EB%82%B4%EB%B6%80_%EC%97%85%EB%AC%B4_%EC%8B%9C%EC%8A%A4%ED%85%9C_%E2%80%94_API_%EB%AA%85%EC%84%B8%EC%84%9C_v1.md) |
-| **API 명세서 v2** | **v2.0** | **RPC 스타일 계층형 URL (권장)** | [GitHub](https://github.com/hospital-reservation-system-mng/docs/blob/master/4_API_명세서/%F0%9F%8F%A5_%EB%B3%91%EC%9B%90_%EC%98%88%EC%95%BD_%26_%EB%82%B4%EB%B6%80_%EC%97%85%EB%AC%B4_%EC%8B%9C%EC%8A%A4%ED%85%9C_%E2%80%94_API_%EB%AA%85%EC%84%B8%EC%84%9C_v2.md) |
+| 문서             | 버전       | 설명                                       | 링크                                                                                                                                                                                                                                                               |
+| -------------- | -------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| API 명세서 v1     | v1.0     | REST 혼용 구조                               | [GitHub](https://github.com/hospital-reservation-system-mng/docs/blob/master/4_API_명세서/%F0%9F%8F%A5_%EB%B3%91%EC%9B%90_%EC%98%88%EC%95%BD_%26_%EB%82%B4%EB%B6%80_%EC%97%85%EB%AC%B4_%EC%8B%9C%EC%8A%A4%ED%85%9C_%E2%80%94_API_%EB%AA%85%EC%84%B8%EC%84%9C_v1.md) |
+| API 명세서 v2     | v2.0     | RPC 스타일 계층형 URL                          | [GitHub](https://github.com/hospital-reservation-system-mng/docs/blob/master/4_API_명세서/%F0%9F%8F%A5_%EB%B3%91%EC%9B%90_%EC%98%88%EC%95%BD_%26_%EB%82%B4%EB%B6%80_%EC%97%85%EB%AC%B4_%EC%8B%9C%EC%8A%A4%ED%85%9C_%E2%80%94_API_%EB%AA%85%EC%84%B8%EC%84%9C_v2.md) |
+| **API 명세서 v3** | **v3.0** | **단일 문서, 컨트롤러 반환 패턴 전면 개정 (권장)** | [GitHub](https://github.com/hospital-reservation-system-mng/docs/blob/master/4_API_명세서/%F0%9F%8F%A5_%EB%B3%91%EC%9B%90_%EC%98%88%EC%95%BD_%26_%EB%82%B4%EB%B6%80_%EC%97%85%EB%AC%B4_%EC%8B%9C%EC%8A%A4%ED%85%9C_%E2%80%94_API_%EB%AA%85%EC%84%B8%EC%84%9C_v3.md) |
 
 
-**v2.0 URL 구조:** `/{역할}/{자원}/{액션}` (예: `/staff/reception/receive`, `/admin/rule/toggleActive`)
+**v3.0 핵심 변경:** 단일 문서 통합, SSR(PRG 패턴) + AJAX 엔드포인트 JSON 유지. URL 구조: `/{역할}/{자원}/{액션}`
 
 ---
 
@@ -134,7 +135,7 @@
 ```
 프로젝트 계획서 v4.1
     ├── ERD v2.0
-    ├── API 명세서 v2.0
+    ├── API 명세서 v2.0 / v3.0
     ├── 화면 흐름 시퀀스 다이어그램 v2.0
     └── 프로젝트 아키텍처 정의서
 ```
